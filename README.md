@@ -18,9 +18,9 @@ step 1. After using standard scaler in my ML code i created a pkl file so that I
 
 step 2: open VS Code and create requirements.txt file in this file we need to write all the necessary libraries and tools. Once all the requirements are mentioned we need to open commond prompt and type the code given below.
 
-'''
-pip install -r requirements.txt
-'''
+```pip install -r requirements.txt```
+
+
 
 step 3: Once all the installation is done, create a file called app.py . code is provided in repository
 
@@ -28,29 +28,11 @@ step 4: To check if the code is properly working create another template folder 
 
 Now run the code by using following command in command propmt 
 
-'''
-python app.py
-'''
+```python app.py```
 
 step 4: Create new POST request in POSTMAN where body is raw and is in json format.In my case the input is as follows :
 
-'''
-{
-    "data":{
-        "Pregnancies":1,
-        "Glucose":148,
-        "BloodPressure":72,
-        "SkinThickness":35,
-        "Insulin":0,
-        "BMI":33,
-        "DiabetesPedigreeFunction":1,
-        "Age":50
-
-
-
-    }
-}
-'''
+```{"data":{"Pregnancies":1,"Glucose":148,"BloodPressure":72,"SkinThickness":35,"Insulin":0,"BMI":33,"DiabetesPedigreeFunction":1,"Age":50}}```
 
 
 
