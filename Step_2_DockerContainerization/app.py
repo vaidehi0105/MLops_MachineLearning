@@ -8,7 +8,7 @@ import pandas as pd
 app=Flask(__name__)
 #Loading the model
 
-model=pickle.load(open('regmodel.pkl','rb'))
+model=pickle.load(open('model.pkl','rb'))
 scalar=pickle.load(open('scaling.pkl','rb'))
 @app.route('/')
 def home():
@@ -21,8 +21,9 @@ def predict_api():
     print(np.array(list(data.values())).reshape(1,-1))
     new_data=scalar.transform(np.array(list(data.values())).reshape(1,-1))
     output=model.predict(new_data)
-    print(output[0])
-    return jsonify(output[0])
+    result=output[0].tolist()
+    print(result)
+    return jsonify(result)
 
 # @app.route('/predict',methods=['POST'])
 # def predict():
