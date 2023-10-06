@@ -1,0 +1,6 @@
+FROM python:3.11.5
+COPY . /app
+WORKDIR /app
+RUN
+EXPOSE
+CMD

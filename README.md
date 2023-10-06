@@ -8,7 +8,7 @@ Implementing Simplified MLops for a Machine Learning Project
  3. Write a simple Python script to train a machine learning model on a dataset of your choice. Here I have used dataset from sklearn datasets which is diabetes datasets. Columns in this dataset are Pregnancies, Glucose, Blood Pressure, SkinThickness, Insulin, BMI, DiabetesPedigreeFunction, Age and Diabetes(0 or 1) and I have used XG Boost classifier to predict the label.
  4. Commit your code to the repository and push it to GitHub.
 
-## Step 2: 
+
 
 
 <!-- 3. Heroku Account (create account , cloud platform in order to deploy the application) -->
@@ -34,5 +34,6 @@ step 4: Create new POST request in POSTMAN where body is raw and is in json form
 
 ```{"data":{"Pregnancies":1,"Glucose":148,"BloodPressure":72,"SkinThickness":35,"Insulin":0,"BMI":33,"DiabetesPedigreeFunction":1,"Age":50}}```
 
+## Step 2: 
 
-
+Create a dockerfile in Vs code.
